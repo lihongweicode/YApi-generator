@@ -1,0 +1,1 @@
+mvn install:install-file -DgroupId=com.sun -DartifactId=tools -Dversion=1.8.jdk -Dpackaging=jar -Dfile=./tools.jar
