@@ -22,7 +22,7 @@
 3）.编写具体的调用类；  
 ```
         //TODO 1.设置项目的基本路径
-        GeneratorApi.basePath = "D:\\work_space\\idea_ws\\youdi2\\business-order-disassemble\\src\\main\\java\\";
+        GeneratorApi.basePath = "D:\\work_space\\idea_ws\\my-model\\YApi-generator\\src\\test\\java\\";
         //2.设置需要排除的属性
 //        GeneratorApi.excludeFields.add("");
         //3.设置java基础类型和YApi类型的转换map    key：java类的全类名  value: YApi中类型的名称
@@ -30,7 +30,7 @@
         //4.设置 对象包装  key:DocDataType  value:外层包装模板（%s会注入对象）
 //        GeneratorApi.typePackageMap.put("","");
         //TODO 5.设置项目的基础包，用来区分 类是项目里的自定义类还是基础类型  （自定义类型）
-        GeneratorApi.basePackage = "net.youdi.y.api";
+        GeneratorApi.basePackage = "org.starr.yapi.api";
 
         //TODO 需要转换的类信息
         Class<?> clz = PurchaseInfoVO.class;
