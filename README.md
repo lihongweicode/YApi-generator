@@ -69,14 +69,14 @@ typeMap.put(Long.class.getName(), "number");
 ```
 5).GeneratorApi.typePackageMap 设置生成文档的外部包装的模板   key:DocDataType  value:外层包装模板（%s会注入对象的文档）  
 项目中已经集成的模板：  
-DocDataType.OBJECT 基础对象
-DocDataType.ARRAY 数组对象
+DocDataType.OBJECT 基础对象  
+DocDataType.ARRAY 数组对象  
 ![array样例](./doc/array.png)
-DocDataType.RETURN_OBJECT 统一返回包装对象
+DocDataType.RETURN_OBJECT 统一返回包装对象  
 ![return_object样例](./doc/return_object.png)
-DocDataType.RETURN_ARRAY 统一返回包装数组
-![return_array样例](./doc/return_array.png)
-DocDataType.RETURN_PAGE  统一返回包装分页
+DocDataType.RETURN_ARRAY 统一返回包装数组  
+![return_array样例](./doc/return_array.png)  
+DocDataType.RETURN_PAGE  统一返回包装分页  
 ![return_page样例](./doc/return_page.png)
 
  
