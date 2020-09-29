@@ -80,7 +80,7 @@ DocDataType.RETURN_PAGE  统一返回包装分页
 ![return_page样例](./doc/return_page.png)
 
 ## 项目打包
-项目中引用了JDK中的javadoc的工具类，需要引入JDK中的tools.jar。根据使用需求需要不同的导入方式，在注入私服时需要注入Yapi-generator-dependencies.jar  
+项目中引用了JDK中的javadoc的工具类，需要引入JDK中的tools.jar。根据使用需求需要不同的导入方式，在注入私服时需要注入Yapi-generator-jar-with-dependencies.jar
 1.个人使用，可以直接使用如下方式导入项目中lib目录下的tools.jar。该方式在打包时不会将tools.jar打到jar中，如果以jar的形式形式使用会报错。
 ```
 <dependency>
