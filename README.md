@@ -30,7 +30,7 @@
         //4.设置 对象包装  key:DocDataType  value:外层包装模板（%s会注入对象）
 //        GeneratorApi.typePackageMap.put("","");
         //TODO 5.设置项目的基础包，用来区分 类是项目里的自定义类还是基础类型  （自定义类型）
-        GeneratorApi.basePackage = "org.starr.yapi.api";
+        GeneratorApi.basePackage = "net.youdi.y.api";
 
         //TODO 需要转换的类信息
         Class<?> clz = PurchaseInfoVO.class;
@@ -79,8 +79,23 @@ DocDataType.RETURN_ARRAY 统一返回包装数组
 DocDataType.RETURN_PAGE  统一返回包装分页  
 ![return_page样例](./doc/return_page.png)
 
- 
-
-
-
-
+## 项目打包
+项目中引用了JDK中的javadoc的工具类，需要引入JDK中的tools.jar。根据使用需求需要不同的导入方式，在注入私服时需要注入Yapi-generator-dependencies.jar  
+1.个人使用，可以直接使用如下方式导入项目中lib目录下的tools.jar。该方式在打包时不会将tools.jar打到jar中，如果以jar的形式形式使用会报错。
+```
+<dependency>
+    <groupId>com.sun</groupId>
+    <artifactId>tools</artifactId>
+    <version>1.8.jdk</version>
+    <scope>system</scope>
+    <systemPath>${project.basedir}/lib/tools.jar</systemPath>
+</dependency>
+```
+ 2.项目组使用，需要先执行lib目录下的install-tools.bat文件，将tools.jar打到本地maven库中。然后以如下方式导入
+```
+<dependency>
+    <groupId>com.sun</groupId>
+    <artifactId>tools</artifactId>
+    <version>1.8.jdk</version>
+</dependency>
+```
