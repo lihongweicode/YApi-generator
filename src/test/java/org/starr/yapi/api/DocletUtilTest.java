@@ -12,7 +12,7 @@ public class DocletUtilTest {
     @Test
     public void test() {
         DocletUtil docletUtil = new DocletUtil(
-                "D:\\work_space\\idea_ws\\youdi2\\business-order-disassemble\\src\\main\\java\\net\\youdi\\order\\disassemble\\purchase\\dto\\ApplyPurchaseDTO.java");
+                "D:\\work_space\\idea_ws\\youdi2\\business-order-disassemble\\src\\test\\java\\org\\starr\\yapi\\api\\PayApplyVO.java");
         ModelClassDocVO modelClassDocVO = docletUtil.exec();
         System.out.println("类注释：" + modelClassDocVO.getModelCommentText());
         System.out.println("属性字段注释如下：");
